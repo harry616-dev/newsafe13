@@ -3,108 +3,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daily Sports Motivation</title>
+  <title>Customer Service</title>
   <style>
-    body {
+    * {
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      line-height: 1.6;
+      color: #04208F; /* Dark blue text */
+      background-color: #ffffff; /* White background */
     }
 
-    h1 {
-      text-align: center;
-      font-size: 28px;
-      color: #007BFF;
-      margin-bottom: 10px;
-    }
-
-    p.description {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 25px;
-    }
-
-    .tip {
-      background: #e0f0ff;
-      border-left: 4px solid #007BFF;
-      padding: 15px 20px;
-      margin: 0 auto 30px;
-      max-width: 500px;
-      font-size: 15px;
-    }
-
-    form {
-      max-width: 500px;
+    .container {
+      max-width: 800px;
       margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #04208F; /* Dark blue header */
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .header-content {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    label {
-      font-size: 14px;
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
 
-    input[type="email"] {
-      padding: 12px;
-      font-size: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      width: 100%;
-    }
-
-    button {
-      padding: 12px;
-      font-size: 15px;
+    .talk-to-us {
+      background-color: white; /* Bright blue button */
+      color: #04208F;
+      padding: 0.8rem 1.5rem;
       border: none;
-      border-radius: 4px;
-      background: #007BFF;
-      color: #fff;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background: #0056b3;
+    .talk-to-us:hover {
+      background-color: #04208F; /* Darker on hover */
     }
 
-    .footer {
+    main {
+      padding: 2rem 0;
+    }
+
+    .hero {
+      background: #ffffff; /* White hero background */
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
       text-align: center;
-      font-size: 12px;
-      color: #555;
-      margin-top: 20px;
+      border: 2px solid #04208F;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 20px 15px;
+    .hero h1 {
+      color: #04208F;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #04208F;
+    }
+
+    .services {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border: 2px solid #04208F;
+    }
+
+    .services h2 {
+      color: #04208F;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .service-item {
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #04208F;
+      border-radius: 5px;
+    }
+
+    .service-item h3 {
+      color: #04208F;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-item p {
+      color: #04208F;
+      font-size: 0.9rem;
+    }
+
+    .commitment {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 2px solid #04208F;
+    }
+
+    .commitment h2 {
+      color: #04208F;
+      margin-bottom: 1rem;
+    }
+
+    .commitment p {
+      color: #04208F;
+    }
+
+    footer {
+      background-color: #04208F;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo" style="text-align:center;">Citibank Customer Service</div>
+        <a href="tel:+1-833-319-6348" class="talk-to-us">Talk to us: 1-833-319-6348</a>
+      </div>
+    </div>
+  </header>
 
-  <h1>Daily Sports Motivation</h1>
-  <p class="description">
-    Get daily tips to stay active, push your limits, and crush your fitness goals.
-  </p>
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Citibank Customer Service</h1>
+        <p>We're here to help you with excellent service and support.</p>
+      </section>
 
-  <div class="tip">
-    ⚽ Example Tip: Do 20 push-ups today to strengthen your upper body.
-  </div>
+      <section class="services">
+        <h2>How We Help</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Product Support</h3>
+            <p>Get help with installation, setup, and troubleshooting for all our products.</p>
+          </div>
+          <div class="service-item">
+            <h3>Technical Help</h3>
+            <p>Our technical team provides solutions for any technical issues you encounter.</p>
+          </div>
+          <div class="service-item">
+            <h3>Account Services</h3>
+            <p>Manage your account information and make changes to your services.</p>
+          </div>
+          <div class="service-item">
+            <h3>Training Resources</h3>
+            <p>Access guides and tutorials to get the most out of our products.</p>
+          </div>
+        </div>
+      </section>
 
-  <form>
-    <label for="email">Your Email Address</label>
-    <input type="email" id="email" placeholder="you@example.com" />
-    <button type="button" onclick="subscribe()">Subscribe Now</button>
-  </form>
+      <section class="commitment">
+        <h2>Our Promise</h2>
+        <p>Customer satisfaction is our priority. We provide reliable, friendly service and work hard to exceed your expectations. Your success is important to us.</p>
+      </section>
+    </div>
+  </main>
 
-  <p class="footer">
-    Free daily tips • Unsubscribe anytime
-  </p>
-
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2024. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
